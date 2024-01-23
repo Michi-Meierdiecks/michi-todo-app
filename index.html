@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Beste ToDo APP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Die Beste ToDo APP</h1>
+        <form id="taskForm" onsubmit="addTask(event)">
+            <input type="text" id="taskInput" placeholder="Aufgabe hinzufügen">
+            <button type="submit">Hinzufügen</button>
+        </form>
+        <ul id="taskList" class="task-list"></ul>
+        <h2>Gespeicherte Aufgaben</h2>
+        <ul id="savedTaskList" class="task-list"></ul>
+        <button onclick="clearLocalStorage()">Speicher löschen</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
